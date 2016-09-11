@@ -1,0 +1,10 @@
+<h1>Regions</h1>
+
+<p>Tap on a region to view all available stations.</p>
+
+<!-- Region list -->
+<div class="list-group">
+    <div data-ng-repeat="region in regions" data-ng-click="regionClicked(region)" class="list-group-item">
+        <a><strong>{{ region }}</strong> <span class="pull-right glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+</div>

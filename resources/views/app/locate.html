@@ -1,0 +1,54 @@
+<h1>Locate</h1>
+
+<p data-ng-if="state == states.waiting">Please grant permission to your location if requested.</p>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Your location</strong>
+    </div>
+
+    <div class="panel-body">
+        <!-- Location pending -->
+        <p data-ng-if="state == states.waiting">Locating you now...</p>
+
+        <div data-ng-if="state == states.waiting" class="progress" style="margin-bottom: 0">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 100%">
+            </div>
+        </div>
+
+        <!-- Location failed -->
+        <div data-ng-if="state == states.failed" class="alert alert-danger" role="alert">
+            <strong>Oh no!</strong> Unfortunately we couldn't locate you.<br />
+            <br />
+            Make sure you allow location access, or try clearing your location settings.<br />
+            <br />
+            <strong>Code:</strong> {{ error }}
+        </div>
+
+        <!-- Located, but outside our supported coverage -->
+        <div data-ng-if="state == states.outside" class="alert alert-danger" role="alert">
+            <strong>Oh no!</strong> We don't recognize your location :(<br />
+            <br />
+            Looks like you're in <strong>{{ location.region }}, {{ location.country }}</strong>.
+        </div>
+
+        <!-- Located successfully -->
+        <div data-ng-if="state == states.located" class="alert alert-success" role="alert">
+            <strong>We've found you!</strong><br />
+            <br />
+            Looks like you're in <strong>{{ location.region }}, {{ location.country }}</strong>.
+        </div>
+
+        <!-- View station results -->
+        <a data-ng-if="state == states.located" data-ng-click="viewStations()" class="btn btn-primary col-xs-12" style="margin-bottom: 10px">
+            <span class="glyphicon glyphicon-arrow-right"></span>
+            View stations in your region
+        </a>
+
+        <!-- Go to manual region selection -->
+        <a data-ng-if="state != states.waiting" class="btn btn-warning col-xs-12" data-ui-sref="regions">
+            <span class="glyphicon glyphicon-arrow-right"></span>
+            Select region manually
+        </a>
+    </div>
+</div>

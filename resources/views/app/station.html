@@ -1,0 +1,69 @@
+<h1>
+    Station
+    <a class="pull-right btn btn-default" data-ui-sref="stations">
+        <span class="glyphicon glyphicon-circle-arrow-left"></span>
+        Back
+    </a>
+</h1>
+
+<!-- List item (logo, genre) -->
+<div data-ng-click="stationClicked()" class="panel panel-default">
+    <div class="panel-body">
+        <div class="media">
+            <!-- Station logo -->
+            <div class="media-left media-middle">
+                <img class="media-object station-logo" data-ng-src="{{ station.image_url }}" />
+            </div>
+
+            <!-- Station information -->
+            <div class="media-body media-middle">
+                <h4 class="media-heading"><a>{{ station.name }}</a></h4>
+                <p class="station-genre">{{ station.genre.name }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Information (pulled from Wikipedia) -->
+<div data-ng-if="station.description.length" class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Information</strong>
+    </div>
+
+    <div class="panel-body">
+        <p data-ng-click="toggleDescTruncated()">{{ description }}</p>
+        <p class="station-desc muted text-center">
+            <a data-ng-click="wikiClicked()">Extracted from Wikipedia - tap above to expand.</a>
+        </p>
+    </div>
+</div>
+
+<!-- Frequencies -->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Frequencies</strong>
+    </div>
+
+    <div class="panel-body">
+        <div class="panel-group" id="frequencies" style="margin-bottom: 0">
+            <!-- Region panels -->
+            <div data-ng-repeat="(region, cities) in station.region_frequencies" class="panel panel-default">
+                <!-- Panel heading -->
+                <div class="panel-heading" data-toggle="collapse" data-parent="#frequencies" data-target="#region-{{ slugify(region) }}">
+        			<h4 class="panel-title">
+        				<a>{{ region }} <span class="pull-right glyphicon glyphicon-chevron-right"></span></a>
+        			</h4>
+        		</div>
+
+                <!-- Panel body -->
+                <div data-ng-attr-id="region-{{ slugify(region) }}" class="panel-collapse collapse">
+        			<div class="panel-body">
+        				<div data-ng-repeat="(city, frequencies) in cities">
+                            <h4><strong>{{ city }}:</strong> {{ getFrequencies(region, city) }}</h4>
+                        </div>
+        			</div>
+        		</div>
+            </div>
+        </div>
+    </div>
+</div>

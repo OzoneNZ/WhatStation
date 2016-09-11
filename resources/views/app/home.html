@@ -1,0 +1,72 @@
+<div class="text-center">
+    <h1>Welcome</h1>
+    <p>To find a frequency, choose one of the options below.</p>
+</div>
+
+<!-- Automatic finding -->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Automatic</strong>
+    </div>
+
+    <div class="panel-body">
+        <div class="btn-group btn-group-justified" role="group">
+            <!-- Locate me -->
+            <a class="btn btn-success col-xs-12" data-ui-sref="locate">
+                <span class="glyphicon glyphicon-map-marker"></span>
+                Locate me
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Manual searching -->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Manual search</strong>
+    </div>
+
+    <div class="panel-body">
+        <div class="btn-group btn-group-justified" role="group">
+            <!-- Station list -->
+            <a class="btn btn-primary" data-ui-sref="stations">
+                <span class="glyphicon glyphicon-headphones"></span>
+                List stations
+            </a>
+
+            <a class="btn btn-primary" data-ui-sref="regions">
+                <span class="glyphicon glyphicon-th-large"></span>
+                Find by region
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Statistics -->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Here's what we're tracking:</strong>
+    </div>
+
+    <div class="panel-body">
+        <div class="list-group" style="margin-bottom: 0">
+            <!-- Frequencies -->
+            <div class="list-group-item">
+                <span class="badge" style="background-color: blue">{{ statistics.frequencies }}</span>
+                <a data-ui-sref="stations"><strong>Frequencies</strong></a>
+            </div>
+
+            <!-- Stations -->
+            <div class="list-group-item">
+                <span class="badge" style="background-color: green">{{ statistics.stations }}</span>
+                <a data-ui-sref="stations"><strong>Stations</strong></a>
+            </div>
+
+            <!-- Regions -->
+            <div class="list-group-item">
+                <span class="badge" style="background-color: red">{{ statistics.regions }}</span>
+                <a data-ui-sref="regions"><strong>Regions</strong></a>
+            </div>
+        </div>
+    </div>
+</div>
