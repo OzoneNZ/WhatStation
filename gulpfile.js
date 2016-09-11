@@ -30,11 +30,14 @@ var scripts = [
 
 elixir(mix => {
     // Scripts
-    mix.scripts(scripts, 'public/js/app.js').version('js/app.js')
+    mix.scripts(scripts, 'public/js/app.js');
 
     // Styles
-    mix.sass('app.css').version('css/app.css');
+    mix.sass('app.css');
 
     // Views
     mix.copy('resources/views/app', 'public/views');
+
+    // Versioning
+    mix.version([ 'js/app.js', 'css/app.css' ]);
 });
