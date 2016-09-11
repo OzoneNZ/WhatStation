@@ -1,0 +1,13 @@
+.idea
+/vendor
+/bower_components
+/node_modules
+/public/build
+/public/fonts
+/public/storage
+/public/css
+/public/js
+Homestead.yaml
+Homestead.json
+.env
+.DS_Store
