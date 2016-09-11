@@ -33,7 +33,6 @@ Route::get('genres', 'GenreController@genres');
 Route::group([ 'prefix' => 'regions' ], function () {
     Route::get('/', 'RegionController@regions');
     Route::get('/{region}/cities', 'RegionController@regionCities');
-    Route::get('/{region}/stations', 'RegionController@regionStations');
 });
 
 

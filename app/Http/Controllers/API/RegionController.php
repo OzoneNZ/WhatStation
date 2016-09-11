@@ -27,13 +27,4 @@ class RegionController extends Controller
     {
         return $region->cities()->pluck('name');
     }
-
-
-    /**
-     *  Fetch stations in a specific region
-     */
-    public function regionStations(Region $region)
-    {
-        
-    }
 }
