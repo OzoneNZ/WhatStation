@@ -75,7 +75,13 @@ app.controller('stationController', [
 
     // Used to 'slugify' a string, make it safe for use in HTML IDs/classes
     $scope.slugify = function (string) {
-        return string.replace(/\s/g, '');
+        var strip = [ ' ', '\'', '\"' ];
+        for (var char in strip) {
+            char = strip[char];
+            string = string.replace(char, '');
+        }
+
+        return string;
     };
 
     // Called when the station banner is clicked
