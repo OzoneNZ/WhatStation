@@ -1,0 +1,52 @@
+/image_url /images/stations/radio-hauraki.png
+/web_url http://www.hauraki.co.nz/
+/wiki_title Radio Hauraki
+
+*Rock
+
+#Auckland
+    .Auckland 99.0
+
+#Bay of Plenty
+    .Rotorua 94.3
+    .Tauranga 91.0
+
+#Canterbury
+    .Christchurch 106.5
+
+#Gisborne
+    .Gisborne 105.3
+
+#Hawke's Bay
+    .Hawke's Bay 99.9
+
+#Manawatu-Wanganui
+    .Manawatu 105.8
+
+#Marlborough
+    .Blenheim 94.5
+
+#Nelson
+    .Nelson 90.4
+
+#Northland
+    .Northland 93.2
+
+#Otago
+    .Dunedin 106.2
+
+#Southland
+    .Southland 93.2
+
+#Taranaki
+    .Taranaki 90.8
+
+#Waikato
+    .Taupo 92.8
+    .Waikato 96.2
+
+#Wellington
+    .Wellington 93.3
+
+#West Coast
+    .West Coast 105.1
