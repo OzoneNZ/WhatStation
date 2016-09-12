@@ -2,7 +2,7 @@
 /web_url http://morefm.co.nz/
 /wiki_title More FM
 
-*Pop
+*Contemporary
 
 #Auckland
     .Auckland 91.8
