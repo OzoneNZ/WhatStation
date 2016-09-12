@@ -73,7 +73,12 @@ class Station extends Model
      */
     public static function getStationList()
     {
-        $stations = static::orderBy('name', 'asc')->get();
+        $stations = static::join('genres', 'stations.genre_id', '=', 'genres.id')
+            ->orderBy('genres.rank', 'asc')
+            ->orderBy('stations.name', 'asc')
+            ->select('stations.*')
+            ->get();
+
         $stations = $stations->each(function ($station) {
             $station->makeHidden('region_frequencies');
         });
