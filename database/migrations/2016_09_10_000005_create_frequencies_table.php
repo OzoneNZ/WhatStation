@@ -30,7 +30,7 @@ class CreateFrequenciesTable extends Migration
             $table->foreign('city_id')->references('id')->on('cities');
 
             // Frequency information
-            $table->string('frequency', 8);
+            $table->string('frequency', 16);
             $table->string('band', 2);
 
             // Timestamps
