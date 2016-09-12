@@ -48,7 +48,7 @@
                     <!-- Branding image -->
                     <a class="navbar-brand" href="/">
                         <span>
-                            <img src="/images/ws-logo.png" alt="WhatStation" style="height: 100%; margin-top: -7px;" />
+                            <img id="ws-logo" src="/images/ws-logo.png" alt="WhatStation" />
                             WhatStation
                         </span>
                     </a>

@@ -47,6 +47,22 @@ nav .glyphicon {
 
 
 /**
+ *  WhatStation images
+ */
+#ws-logo {
+    height: 100%;
+    margin-top: -7px;
+}
+
+#ws-logo-full {
+    width: 80%;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/**
  *  Footer
  */
 .footer {
