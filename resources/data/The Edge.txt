@@ -1,0 +1,60 @@
+/image_url /images/stations/the-edge.png
+/web_url http://theedge.co.nz/
+/wiki_title The Edge (New Zealand)
+
+*Top 40
+
+#Auckland
+    .Auckland 94.2
+
+#Bay of Plenty
+    .Rotorua 99.9
+    .Tauranga 99.8
+    .Whakatane 104.1
+
+#Canterbury
+    .Ashburton 93.3
+    .Canterbury 95.3
+    .Timaru 95.5
+
+#Gisborne
+    .Gisborne 99.7
+
+#Hawke's Bay
+    .Hawke's Bay 98.3
+
+#Manawatu-Wanganui
+    .Manawatu 93.0
+
+#Marlborough
+    .Marlborough 104.9
+
+#Nelson
+    .Nelson 88.8
+
+#Northland
+    .Northland 94.0
+
+#Otago
+    .Oamaru 96.0
+    .Otago 91.8
+    .Queenstown 95.2
+    .Wanaka 98.6
+
+#Southland
+    .Southland 97.2
+
+#Taranaki
+    .Taranaki 94.0
+
+#Waikato
+    .Taupo 88.8
+    .Waikato 97.8
+    .Whangamata 93.1
+
+#Wairarapa
+    .Wairarapa 95.9
+
+#Wellington
+    .Kapiti 97.5
+    .Wellington 98.6
