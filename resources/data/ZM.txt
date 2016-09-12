@@ -1,0 +1,58 @@
+/image_url /images/stations/zm.png
+/web_url http://zm.co.nz/
+/wiki_title ZM (New_Zealand)
+
+*Top 40
+
+#Auckland
+    .Auckland 91.0
+
+#Bay of Plenty
+    .Bay of Plenty 89.4
+    .Rotorua 98.3
+
+#Canterbury
+    .Christchurch 91.3
+    .Sumner 90.9
+    .South Canterbury 96.3
+
+#Gisborne
+    .Gisborne 107.4/107.7
+
+#Hawke's Bay
+    .Hawke's Bay 95.9
+
+#Manawatu-Wanganui
+    .Manawatu 90.6
+    .Wanganui 96.8
+
+#Marlborough
+    .Marlborough 90.5
+
+#Nelson
+    .Nelson 96.8
+
+#Northland
+    .Whangarei 94.8
+
+#Otago
+    .Dunedin 95.8
+    .Wanaka 100.2
+    .Queenstown 88.8
+
+#Southland
+    .Southland 95.6
+
+#Taranaki
+    .Taranaki 98.8
+
+#Waikato
+    .Taupo 90.4
+    .Waikato 89.9
+
+#Wairarapa
+    .Wairarapa 94.3
+
+#Wellington
+    .Kapiti 91.1
+    .Wellington 90.9
