@@ -25,6 +25,7 @@
 #Manawatu-Wanganui
     .Manawatu 92.2
     .Horowhenua 104.2
+    .Wanganui 92.8
 
 #Marlborough
     .Blenheim 92.9
@@ -60,6 +61,3 @@
 #Wellington
     .Kapiti 90.3
     .Wellington 95.3/99.7
-
-#West Coast
-    .Wanganui 92.8
