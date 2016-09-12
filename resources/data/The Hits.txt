@@ -1,0 +1,74 @@
+/image_url /images/stations/the-hits.png
+/web_url http://thehits.co.nz/
+/wiki_title The Hits (New Zealand)
+
+*Contemporary
+
+#Auckland
+    .Auckland 97.4
+
+#Bay of Plenty
+    .Bay of Plenty 95.0
+    .Rotorua 97.5
+
+#Canterbury
+    .Ashburton 89.3
+    .Christchurch 97.7
+    .South Canterbury 94.7/98.7
+    .Sumner 96.5
+
+#Gisborne
+    .Gisborne 90.9
+
+#Hawke's Bay
+    .Hawke's Bay 89.5
+    .Wairoa 99.7
+
+#Manawatu-Wanganui
+    .Manawatu 97.8
+    .Wanganui 89.6
+
+#Marlborough
+    .Marlborough 96.9
+    .Picton 89.1
+
+#Nelson
+    .Nelson 89.6
+
+#Northland
+    .Doubtless Bay 105.9
+    .Northland 96.4
+    .Russell 106.1
+    .Whangarei 95.6
+
+#Otago
+    .Alexandra 99.9
+    .Dunedin 89.4
+    .Oamaru 98.4
+    .Wanaka 96.2
+
+#Southland
+    .Te Anau 90.4
+    .Southland 98.8
+
+#Taranaki
+    .Taranaki 90.0
+    .South Taranaki 91.2
+
+#Waikato
+    .Taupo 96.8
+    .Tokoroa 97.3
+    .Waikato 98.6
+
+#Wellington
+    .Masterton 90.3
+    .Horowhenua 92.7
+    .Kapiti 92.7
+    .Wellington 90.1
+
+#West Coast
+    .Greymouth 90.7
+    .Hokitika 93.1
+    .Reefton 97.5
+    .South Westland 90.5
+    .Westport 90.9
