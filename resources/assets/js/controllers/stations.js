@@ -62,8 +62,9 @@ app.controller('stationsListController', [
     // Filters stations based on form inputs
     $scope.filterStation = function (station) {
         var inputGiven = false;
+        var matched = true;
 
-        // Check if a name was given
+        // Check station name
         if ($scope.filter.name) {
             inputGiven = true;
 
@@ -72,23 +73,37 @@ app.controller('stationsListController', [
             var name = station.name.toLowerCase();
 
             // Check if the station name contains our search
-            return (name.indexOf(filter) != -1);
+            if (name.indexOf(filter) == -1) {
+                matched = false;
+            }
         }
 
-        // Check if a genre was given
+        // Check station genre
         if ($scope.filter.genre) {
             inputGiven = true;
-            return (station.genre.name == $scope.filter.genre);
+            if (station.genre.name != $scope.filter.genre) {
+                matched = false;
+            }
         }
 
-        // Check if a region was given
+        // Check station region
         if ($scope.filter.region) {
             inputGiven = true;
-            return (station.regions.indexOf($scope.filter.region) != -1);
+            if (station.regions.indexOf($scope.filter.region) == -1) {
+                matched = false;
+            }
         }
 
-        // Don't filter the result if no filter criteria was given
-        return (!inputGiven) ? true : false;
+        // Match if no input was given
+        if (!inputGiven) {
+            return true;
+        } else { // Input was given, check whether a match was found
+            if (matched) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     };
 
     // Invoked when a specific station is clicked/tapped
