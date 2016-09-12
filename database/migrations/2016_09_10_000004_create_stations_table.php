@@ -25,7 +25,7 @@ class CreateStationsTable extends Migration
             $table->string('name', 64)->unique();
             $table->string('image_url', 255);
             $table->string('web_url', 128);
-            $table->string('wiki_title', 64);
+            $table->string('wiki_title', 64)->nullable();
 
             // Timestamps
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
