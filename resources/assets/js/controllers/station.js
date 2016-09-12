@@ -75,12 +75,9 @@ app.controller('stationController', [
 
     // Used to 'slugify' a string, make it safe for use in HTML IDs/classes
     $scope.slugify = function (string) {
-        var strip = [ ' ', '\'', '\"' ];
-        for (var char in strip) {
-            char = strip[char];
-            string = string.replace(char, '');
-        }
-
+        string = string.replace(/\s/g, '');
+        string = string.replace(/\'/, '');
+        string = string.replace(/\"/, '');
         return string;
     };
 
