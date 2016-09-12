@@ -1,0 +1,65 @@
+/image_url /images/stations/more-fm.png
+/web_url http://morefm.co.nz/
+/wiki_title More FM
+
+*Pop
+
+#Auckland
+    .Auckland 91.8
+
+#Bay of Plenty
+    .Rotorua 95.9/89.2
+    .Tauranga 93.4
+
+#Canterbury
+    .Christchurch 92.1
+    .Kaikoura 89.9
+
+#Gisborne
+    .Gisborne 90.1/98.9
+
+#Hawke's Bay
+    .Hawke's Bay 88.7
+    .Wairoa 90.1/98.9
+
+#Manawatu-Wanganui
+    .Manawatu 92.2
+    .Horowhenua 104.2
+
+#Marlborough
+    .Blenheim 92.9
+    .Marlborough 92.9
+    .Picton 94.7
+
+#Nelson
+    .Nelson 92.8
+
+#Northland
+    .Northland 91.6
+
+#Otago
+    .Clutha 92.9/93.7
+    .Dunedin 97.4
+    .Otago 90.3/94.3
+    .Queenstown 92.0/99.4
+
+#Southland
+    .Southland 89.2
+
+#Taranaki
+    .Taranaki 93.2
+
+#Waikato
+    .Coromandel 89.1
+    .Taupo 93.6
+    .Waikato 92.2
+
+#Wairarapa
+    .Wairarapa 89.5
+
+#Wellington
+    .Kapiti 90.3
+    .Wellington 95.3/99.7
+
+#West Coast
+    .Wanganui 92.8
