@@ -12,13 +12,4 @@ class City extends Model
     protected $visible = [
         'name'
     ];
-
-
-    /**
-     *  Getter for route key attribute
-     */
-    public function getRouteKeyName()
-    {
-        return 'name';
-    }
 }
