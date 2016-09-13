@@ -18,13 +18,4 @@ class RegionController extends Controller
     {
         return Region::all()->pluck('name');
     }
-
-
-    /**
-     *  Fetch all cities in a specific region
-     */
-    public function regionCities(Region $region)
-    {
-        return $region->cities()->pluck('name');
-    }
 }

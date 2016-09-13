@@ -30,10 +30,7 @@ Route::get('genres', 'GenreController@genres');
 /**
  *  Region controller
  */
-Route::group([ 'prefix' => 'regions' ], function () {
-    Route::get('/', 'RegionController@regions');
-    Route::get('/{region}/cities', 'RegionController@regionCities');
-});
+Route::get('regions', 'RegionController@regions');
 
 
 /**
