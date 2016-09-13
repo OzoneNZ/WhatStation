@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" data-ng-app="whatstation">
     <head>
-        <!-- Meta tags -->
+        <!-- Application metadata -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+        <!-- WhatStation metadata -->
+        <meta name="description" content="New Zealand radio station frequency finder">
+        <meta name="keywords" content="radio,station,new,zealand,frequency">
+        <meta name="author" content="Blake Irwin">
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="/images/ws-logo.png" />
