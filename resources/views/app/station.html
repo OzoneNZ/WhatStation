@@ -50,19 +50,19 @@
             <div data-ng-repeat="(region, cities) in station.region_frequencies" class="panel panel-default">
                 <!-- Panel heading -->
                 <div class="panel-heading" data-toggle="collapse" data-parent="#frequencies" data-target="#region-{{ slugify(region) }}">
-        			<h4 class="panel-title">
-        				<a>{{ region }} <span class="pull-right glyphicon glyphicon-chevron-right"></span></a>
-        			</h4>
-        		</div>
+                    <h4 class="panel-title">
+                        <a>{{ region }} <span class="pull-right glyphicon glyphicon-chevron-right"></span></a>
+                    </h4>
+                </div>
 
                 <!-- Panel body -->
                 <div data-ng-attr-id="region-{{ slugify(region) }}" class="panel-collapse collapse">
-        			<div class="panel-body">
-        				<div data-ng-repeat="(city, frequencies) in cities">
+                    <div class="panel-body">
+                        <div data-ng-repeat="(city, frequencies) in cities">
                             <h4><strong>{{ city }}:</strong> {{ getFrequencies(region, city) }}</h4>
                         </div>
-        			</div>
-        		</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
