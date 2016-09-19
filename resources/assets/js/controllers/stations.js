@@ -11,7 +11,9 @@ app.controller('stationsListController', [
     // Filter object
     $scope.filter = {
         name: '',
-        genre: ''
+        genre: '',
+        region: '',
+        toggle: true
     };
 
     // Genre list
@@ -63,6 +65,11 @@ app.controller('stationsListController', [
     $scope.filterStation = function (station) {
         var inputGiven = false;
         var matched = true;
+
+        // Check if filtering is enabled
+        if (!$scope.filter.toggle) {
+            return true;
+        }
 
         // Check station name
         if ($scope.filter.name) {

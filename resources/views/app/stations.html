@@ -20,7 +20,7 @@
             <div class="form-group">
                 <label for="filter-name" class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-10">
-                    <input data-ng-model="filter.name" type="text" class="form-control" id="filter-name" placeholder="Enter partial station name">
+                    <input name="filter-name" data-ng-model="filter.name" type="text" class="form-control" id="filter-name" placeholder="Enter partial station name">
                 </div>
             </div>
 
@@ -28,7 +28,7 @@
             <div class="form-group">
                 <label for="filter-genre" class="col-sm-2 control-label">Genre</label>
                 <div class="col-sm-10">
-                    <select class="form-control" data-ng-model="filter.genre" data-ng-options="genre as genre for genre in genres">
+                    <select name="filter-genre" class="form-control" data-ng-model="filter.genre" data-ng-options="genre as genre for genre in genres">
                         <option value="" disabled selected>Select a genre</option>
                     </select>
                 </div>
@@ -38,9 +38,21 @@
             <div class="form-group">
                 <label for="filter-region" class="col-sm-2 control-label">Region</label>
                 <div class="col-sm-10">
-                    <select class="form-control" data-ng-model="filter.region" data-ng-options="region as region for region in regions">
+                    <select name="filter-region" class="form-control" data-ng-model="filter.region" data-ng-options="region as region for region in regions">
                         <option value="" disabled selected>Select a region</option>
                     </select>
+                </div>
+            </div>
+
+            <!-- Filter toggle -->
+            <div class="form-group">
+                <label for="filter-toggle" class="col-sm-2 control-label">Toggle</label>
+                <div class="col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input data-ng-model="filter.toggle" type="checkbox" value="1"> {{ filter.toggle ? "Filtering enabled" : "Filtering disabled" }}
+                        </label>
+                    </div>
                 </div>
             </div>
 
