@@ -24,35 +24,40 @@ app.config([ '$stateProvider', '$urlRouterProvider', function ($stateProvider, $
     .state('/', {
         url: '/',
         templateUrl: 'views/home.html',
-        controller: 'homeController'
+        controller: 'homeController',
+        data: { pageTitle: 'WhatStation' }
     })
 
     // Geolocation
     .state('locate', {
         url: '/locate',
         templateUrl: 'views/locate.html',
-        controller: 'locateController'
+        controller: 'locateController',
+        data: { pageTitle: 'WhatStation - Locate' }
     })
 
     // Region list
     .state('regions', {
         url: '/regions',
         templateUrl: 'views/regions.html',
-        controller: 'regionsListController'
+        controller: 'regionsListController',
+        data: { pageTitle: 'WhatStation - Regions' }
     })
 
     // Station list
     .state('stations', {
         url: '/stations/:region',
         templateUrl: 'views/stations.html',
-        controller: 'stationsListController'
+        controller: 'stationsListController',
+        data: { pageTitle: 'WhatStation - Stations' }
     })
 
     // Station view
     .state('station', {
         url: '/stations/:station/:region/:city',
         templateUrl: 'views/station.html',
-        controller: 'stationController'
+        controller: 'stationController',
+        data: { pageTitle: 'WhatStation - Station' }
     });
 
 }]);
