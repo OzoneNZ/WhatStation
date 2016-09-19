@@ -99,7 +99,7 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
-                <p class="text-muted text-center">&copy; 2016 - Blake Irwin</p>
+                <p class="text-muted text-center">&copy; 2016 - <a href="mailto:blake@proxycha.in?subject=WhatStation">Blake Irwin</a></p>
             </div>
         </footer>
     </body>
